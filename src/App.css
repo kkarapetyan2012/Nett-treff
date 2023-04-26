@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'ManropeBold';
+  src: url('./assets/fonts/Manrope-Bold.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'ManropeExtraBold';
+  src: url('./assets/fonts/Manrope-ExtraBold.ttf') format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'ManropeMedium';
+  src: url('./assets/fonts/Manrope-Medium.ttf') format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1524px;
+  margin: auto;
+  padding: 50px 42px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MuiInputBase-input {
+  padding: 12px 24px 12px 20px !important;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slick-prev:before, .slick-next:before {
+  display: none !important;
+}
+
+.slick-prev, .slick-next {
+  font-size: unset !important;
+  line-height: unset !important;
+  color: unset !important;
+  width: auto !important;
+  top: 120px !important;
+}
+
+.slick-dots li {
+  width: unset !important;
+}
+
+.slick-dots li button:before {
+  display: none;
 }
