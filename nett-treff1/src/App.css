@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'ManropeBold';
+  src: url('./assets/fonts/Manrope-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ManropeExtraBold';
+  src: url('./assets/fonts/Manrope-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ManropeMedium';
+  src: url('./assets/fonts/Manrope-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1524px;
+  margin: auto;
+  padding: 50px 42px;
+  display: flex;
+}
+
+.MuiInputBase-input {
+  padding: 12px 24px 12px 20px !important;
+  text-align: left;
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none !important;
+}
+
+.slick-prev, .slick-next {
+  font-size: unset !important;
+  line-height: unset !important;
+  color: unset !important;
+  width: auto !important;
+  top: 120px !important;
+}
+
+.slick-dots li {
+  width: unset !important;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
